@@ -7,4 +7,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Fichemetier.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Fichemetier.md" />
+  </ItemGroup>
+
 </Project>

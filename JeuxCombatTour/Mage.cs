@@ -8,6 +8,12 @@ namespace JeuxCombatTour
 {
     public class Mage : Personnage
     {
+
+        public new int PV = 24;
+        public int vitesse = 5; 
+        public int attaque = 6;
+        public int attaqueSpeciale = 2;
+
         public Mage(int pv, int vitesse, int attaque, int attaqueSpeciale) : base(pv, vitesse, attaque, attaqueSpeciale)
         {
             PV = pv;
@@ -16,18 +22,5 @@ namespace JeuxCombatTour
             AttaqueSpeciale= attaqueSpeciale;
         }
 
-        public void AttaqueMage()
-        {
-
-            int AttaqueMage = Attaque = 6;
-
-        }
-
-        public void VitesseMage()
-        {
-
-            int VitesseMage =  Vitesse = 5; 
-
-        }
     }
 }

@@ -16,11 +16,5 @@ namespace JeuxCombatTour
             attaqueSpeciale = AttaqueSpeciale;
         }
 
-        public void AttaqueSoldat ()
-        {
-
-
-
-        }
     }
 }
