@@ -5,14 +5,9 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon />
+    <StartupObject />
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Fichemetier.md" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Fichemetier.md" />
-  </ItemGroup>
 
 </Project>

@@ -24,6 +24,27 @@ namespace JeuxCombatTour
         
         }
 
-        public abstract void Attaquer();
+        //public abstract void Attaquer()
+        //{
+
+        //    if () 
+            
+        //    {
+
+        //        PV = PV - Attaque;
+
+        //    }
+
+
+        //}
+
+        public void MortPersonnage()
+        {
+            if (PV <= 0)
+            {
+                PV = 0;
+                Mort = true;
+            }
+        }
     }
 }
