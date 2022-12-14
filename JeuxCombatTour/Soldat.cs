@@ -13,7 +13,7 @@ namespace JeuxCombatTour
             PV = pv;
             Attaque = attaque;
             Vitesse = vitesse;
-            attaqueSpeciale = AttaqueSpeciale;
+            AttaqueSpeciale = attaqueSpeciale;
         }
 
     }

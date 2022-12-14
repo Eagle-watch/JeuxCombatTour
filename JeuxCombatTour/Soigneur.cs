@@ -16,10 +16,8 @@ namespace JeuxCombatTour
             AttaqueSpeciale= attaqueSpeciale;
         }
 
-        public void AttaqueSoigneur ()
+        public override void Attaquer()
         {
-
-
 
         }
     }
