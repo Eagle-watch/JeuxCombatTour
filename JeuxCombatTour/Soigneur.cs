@@ -8,22 +8,16 @@ namespace JeuxCombatTour
 {
     public class Soigneur : Personnage
     {
-        public new int Attaque = 3; 
 
-
-
-        public Soigneur(int pv, int vitesse, int attaque, int attaqueSpeciale, bool mort) : base(pv, vitesse, attaque, attaqueSpeciale, mort)
+        public Soigneur() 
         {
-            PV= pv;
-            Vitesse= vitesse;
-            Attaque= attaque;
-            AttaqueSpeciale= attaqueSpeciale;
-            Mort= mort;
+            PV = 20;
+            Vitesse = 4;
+            Attaque = 3;
+            AttaqueSpeciale = 3;
+            Mort = false;
+            Nom = "Soigneur";
+            AttaqueOn = true;
         }
-
-        //public override void Attaquer()
-        //{
-
-        //}
     }
 }

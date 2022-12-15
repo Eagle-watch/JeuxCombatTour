@@ -14,29 +14,23 @@ namespace JeuxCombatTour
         public int AttaqueSpeciale { get; set; }
         public bool Mort = false;
 
-        public Personnage(int pv , int vitesse , int attaque , int attaqueSpeciale, bool mort) {
-        
-            this.PV = pv;
-            Vitesse = vitesse;
-            Attaque = attaque;
-            AttaqueSpeciale = attaqueSpeciale;
-            Mort = mort;
-        
+        public String Nom { get; set; }
+
+        public bool AttaqueOn { get; set; }
+
+
+
+        public void Attaquer(Personnage perso)
+        {
+            Console.WriteLine("Perso qui attaque : " + Nom);
+            perso.PV -= Attaque;
+            perso.MortPersonnage();
+            Console.WriteLine("Perso qui est attaquer : " + perso.Nom);
+            Console.WriteLine("PV du perso attaquer : " + perso.PV);
+            this.AttaqueOn = false;
+
         }
 
-        //public abstract void Attaquer()
-        //{
-
-        //    if () 
-            
-        //    {
-
-        //        PV = PV - Attaque;
-
-        //    }
-
-
-        //}
 
         public void MortPersonnage()
         {
@@ -46,5 +40,14 @@ namespace JeuxCombatTour
                 Mort = true;
             }
         }
+
+        public bool EstMort()
+        {
+
+            return this.Mort;
+
+        }
+
+        
     }
 }

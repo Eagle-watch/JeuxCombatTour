@@ -8,18 +8,16 @@ namespace JeuxCombatTour
 {
     public class Soldat : Personnage
     {
-        public Soldat(int pv, int vitesse, int attaque, int attaqueSpeciale, bool mort) : base(pv, vitesse, attaque, attaqueSpeciale , mort)
+        public Soldat() 
         {
-            PV = pv;
-            Attaque = attaque;
-            Vitesse = vitesse;
-            AttaqueSpeciale = attaqueSpeciale;
-            Mort= mort;
+            PV = 30;
+            Attaque = 5;
+            Vitesse = 6;
+            AttaqueSpeciale = 2;
+            Mort = false;
+            Nom = "Soldat";
+            AttaqueOn = true;
         }
 
-        //public override void Attaquer()
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }
