@@ -44,10 +44,6 @@ namespace JeuxCombatTour
                 
                 }
 
-
-
-
-
                 PersoJ1 = Joueurs[0].personnages.FirstOrDefault(p => !p.Mort && p.AttaqueOn);
                 PersoJ2 = Joueurs[1].personnages.FirstOrDefault(p => !p.Mort && p.AttaqueOn);
                 if (PersoJ1 == null)
@@ -87,7 +83,7 @@ namespace JeuxCombatTour
 
                 }
 
-                Joueurs[0].personnages.ForEach(p=> p.AttaqueOn= true);
+                Joueurs[0].personnages.ForEach(p => p.AttaqueOn= true);
                 Joueurs[1].personnages.ForEach(p => p.AttaqueOn = true);
             }
 
